@@ -79,6 +79,12 @@ button{
     background-color: #ff4444;
 }
 
+h3{
+    padding:  5px 20px;
+    background-color:#f0f4fd ;
+    color:#566b8c;
+}
+
 /* hover */
 .add-todo>button:hover{
     background-color:  #4355f5;

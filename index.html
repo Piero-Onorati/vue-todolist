@@ -34,7 +34,7 @@
         <!-- end div with input + button -->
 
         <!-- start div with 'to do' items -->
-        <div class="todo-list">
+        <div class="todo-list" v-if="toDoList.length > 0">
             <ul>
                 <li class="todo-item" v-for="item in toDoList">
                     <span> {{item}}</span>
@@ -42,6 +42,7 @@
                 </li>
             </ul>
         </div>
+        <h3 v-else>Non ci sono to-do...</h3>
         <!-- end div with 'to do' items -->
 
 
