@@ -79,10 +79,15 @@ button{
     background-color: #ff4444;
 }
 
-.todo-list ul li button:hover, .add-todo>button:hover{
-    filter: brightness(94%);
+.todo-list ul li button:hover{
+    background-color: #fd1b1b
+    
+}
+
+.add-todo>button:hover{
+    background-color:  #4355f5;
 }
 
 .todo-list ul li:hover{
-    background-color: #dfe8ff;
+    background-color: #dfe8ffda;
 }
