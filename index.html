@@ -28,8 +28,8 @@
 
         <!-- start div with input + button -->
         <div class="add-todo">
-            <input type="text" placeholder="Write new to do item...">
-            <button><i class="fas fa-plus"></i></button>
+            <input type="text" placeholder="Write new to do item..." v-model="newToDo" @keyup.enter ="addNewTask">
+            <button @click="addNewTask"><i class="fas fa-plus"></i></button>
         </div>
         <!-- end div with input + button -->
 
@@ -38,7 +38,7 @@
             <ul>
                 <li class="todo-item" v-for="item in toDoList">
                     <span> {{item}}</span>
-                    <button><i class="fas fa-trash-alt"></i></button>
+                    <button @click="removeTask"><i class="fas fa-trash-alt"></i></button>
                 </li>
             </ul>
         </div>

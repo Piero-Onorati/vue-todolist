@@ -12,6 +12,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+button{
+    border-radius: 5px;
+    padding: 10px 11px;
+    color: white;
+    border: none;
+}
+
+/* div with logo */
+
 .logo{
     text-align: center;
     padding-top: 30px;
@@ -19,6 +28,8 @@
 .logo img{
     max-width: 250px
 }
+
+/* div with input + button */
 
 .add-todo{
     display: flex;
@@ -33,20 +44,17 @@
     border: 1px solid #b3c0d3;
     font-family: 'Poppins', sans-serif;
     margin: 0 10px;
-
 }
 
-button{
-    border-radius: 5px;
-    padding: 10px 11px;
-    color: white;
-    border: none;
+.add-todo>input:focus-visible{
+    outline-color: #6270ed;
 }
 
 .add-todo>button{
     background-color: #6270ed;
 }
 
+/* div with 'to do' items */
 .todo-list ul{
     margin : 0 20px
 }
@@ -61,7 +69,6 @@ button{
     border-bottom: 2px solid white;
     border-radius: 5px;
     padding:  5px 20px;
- 
 }
 
 .todo-list ul li>span{
@@ -70,4 +77,12 @@ button{
 
 .todo-list ul li button{
     background-color: #ff4444;
+}
+
+.todo-list ul li button:hover, .add-todo>button:hover{
+    filter: brightness(94%);
+}
+
+.todo-list ul li:hover{
+    background-color: #dfe8ff;
 }
