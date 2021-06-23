@@ -17,7 +17,7 @@ const app = new Vue (
                 if (this.newToDo !=''){
                     this.toDoList.push(this.newToDo)
                 }
-                
+                this.newToDo ='';
             },
 
             removeTask : function(index){
