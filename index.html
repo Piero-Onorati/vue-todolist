@@ -36,9 +36,9 @@
         <!-- start div with 'to do' items -->
         <div class="todo-list" v-if="toDoList.length > 0">
             <ul>
-                <li class="todo-item" v-for="item in toDoList">
+                <li class="todo-item" v-for="(item, index) in toDoList">
                     <span> {{item}}</span>
-                    <button @click="removeTask"><i class="fas fa-trash-alt"></i></button>
+                    <button @click="removeTask(index)"><i class="fas fa-trash-alt"></i></button>
                 </li>
             </ul>
         </div>
