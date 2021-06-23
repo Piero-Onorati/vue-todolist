@@ -21,7 +21,7 @@ const app = new Vue (
             },
 
             removeTask : function(index){
-                this.toDoList.splice(index,1)
+                this.toDoList.splice(index,1);
             }
 
         }
