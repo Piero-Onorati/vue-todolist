@@ -79,13 +79,13 @@ button{
     background-color: #ff4444;
 }
 
-.todo-list ul li button:hover{
-    background-color: #fd1b1b
-    
-}
-
+/* hover */
 .add-todo>button:hover{
     background-color:  #4355f5;
+}
+
+.todo-list ul li button:hover{
+    background-color: #fd1b1b
 }
 
 .todo-list ul li:hover{
