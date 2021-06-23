@@ -3,3 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color:#f0f4fd4b;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 30px;
+}
+.logo img{
+    max-width: 250px
+}
+
+.add-todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 20px 0;
+}
+
+.add-todo>input{
+    border-radius: 5px;
+    padding: 7px 5px;
+    border: 1px solid #b3c0d3;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 10px;
+
+}
+
+button{
+    border-radius: 5px;
+    padding: 10px 11px;
+    color: white;
+    border: none;
+}
+
+.add-todo>button{
+    background-color: #6270ed;
+}
+
+.todo-list ul{
+    margin : 0 20px
+}
+
+.todo-list ul li{
+    list-style: none;
+    background-color: #f0f4fd;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+    padding:  5px 20px;
+ 
+}
+
+.todo-list ul li>span{
+    color:#566b8c;
+}
+
+.todo-list ul li button{
+    background-color: #ff4444;
+}

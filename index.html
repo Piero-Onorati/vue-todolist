@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet"> 
     <!-- My css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- CDN Font-awesome -->
@@ -13,6 +17,36 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
+
+    <div id="app" class="container">
+
+        <!-- start div with logo -->
+        <div class="logo">
+            <img src="img/logo-boolean.png" alt="">
+        </div>
+        <!-- end div with logo -->
+
+        <!-- start div with input + button -->
+        <div class="add-todo">
+            <input type="text" placeholder="Write new to do item...">
+            <button><i class="fas fa-plus"></i></button>
+        </div>
+        <!-- end div with input + button -->
+
+        <!-- start div with 'to do' items -->
+        <div class="todo-list">
+            <ul>
+                <li class="todo-item" v-for="item in toDoList">
+                    <span> {{item}}</span>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </li>
+            </ul>
+        </div>
+        <!-- end div with 'to do' items -->
+
+
+
+    </div>
     
 
     <script src="js/script.js"></script>
