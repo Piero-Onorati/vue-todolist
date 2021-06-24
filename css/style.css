@@ -149,7 +149,8 @@ header{
     padding:  5px 20px;
 }
 
-.todo-list ul li>span{
+.todo-list ul li .left-item>span{
+    margin-left: 10px;
     color:#566b8c;
 }
 

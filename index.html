@@ -88,7 +88,10 @@
         <div class="todo-list" v-if="toDoList.length > 0">
             <ul>
                 <li class="todo-item" v-for="(item, index) in toDoList">
-                    <span> {{item}}</span>
+                    <div class="left-item">
+                        <input type="checkbox">
+                        <span> {{item}}</span>
+                    </div>
                     <button @click="removeTask(index)"><i class="fas fa-trash-alt"></i></button>
                 </li>
             </ul>
