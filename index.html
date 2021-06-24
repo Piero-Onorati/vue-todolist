@@ -20,14 +20,65 @@
 
     <div id="app" class="container">
 
-        <!-- start div with logo -->
-        <div class="logo">
-            <img src="img/logo-boolean.png" alt="">
-        </div>
-        <!-- end div with logo -->
+        <!-- start header -->
+        <header>
 
-        <!-- start div with input + button -->
-        <div class="add-todo">
+            <!-- start top-header -->
+            <div class="top-header">
+
+                <!-- start div with logo -->
+                <div class="logo">
+                    <img src="img/logo-boolean.png" alt="">
+                </div>
+                <!-- end div with logo -->
+
+            </div>
+            <!-- end top-header -->
+
+            <!-- start bottom-header -->
+            <div class="bottom-header">
+
+                <!-- start date -->
+                <div class="date">
+
+                    <!-- start day -->
+                    <div class="day">
+                        <i class="fas fa-calendar"></i>
+                        <div id="day"></div>
+                    </div>
+                    <!-- end day -->
+
+                    <!-- start month -->
+                    <div class="month">
+                        <h2 id="month"></h2>
+                    </div>
+                    <!-- end month -->
+
+                </div>
+                <!-- end date -->
+
+                <div class="photo-user">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <!-- start setting-icons -->
+                <div class="setting-icons">
+                    <i class="far fa-calendar-alt"></i>
+                    <i class="fas fa-palette"></i>
+                    <i class="fas fa-cog"></i>
+                </div>
+                <!-- start setting-icons -->
+
+            </div>
+            <!-- end bottom-header -->
+        
+        </header>
+        <!-- end header -->
+
+        
+
+         <!-- start div with input + button -->
+         <div class="add-todo">
             <input type="text" placeholder="Write new to do item..." v-model="newToDo" @keyup.enter ="addNewTask">
             <button @click="addNewTask"><i class="fas fa-plus"></i></button>
         </div>
@@ -45,11 +96,11 @@
         <h3 v-else>Non ci sono to-do...</h3>
         <!-- end div with 'to do' items -->
 
-
-
     </div>
-    
 
     <script src="js/script.js"></script>
+
+    
 </body>
 </html>
+

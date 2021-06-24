@@ -19,18 +19,96 @@ button{
     border: none;
 }
 
-/* div with logo */
+/* -------------- HEADER -------------- */
 
+header{
+    width: 100%;
+    background-image: url(../img/mister-m-wAelo9Ftb78-unsplash.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* top-header */
 .logo{
     text-align: center;
     padding-top: 30px;
 }
 .logo img{
-    max-width: 250px
+    max-width: 200px
+}
+
+/* bottom-header */
+.bottom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0 20px;
+    padding: 20px;
+}
+
+/* div with the date: day + month */
+.bottom-header .date{
+    display: flex;
+    align-items: center;
+}
+
+.bottom-header .date .day>i{
+    font-size: 60px;
+    color:whitesmoke;
+}
+
+.bottom-header .date .day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#day{
+    position: absolute;
+    bottom: 0px;
+    color: #409ee4;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#month{
+    font-size: 40px;
+    margin-left: 10px;
+    color:#ed6d62;
+}
+
+/* USER photo */
+.bottom-header .photo-user{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+    border:2px solid #dee3ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-header .photo-user>i{
+    font-size: 35px;
+    color:#dee3ea
+}
+
+/* Setting icons */
+.bottom-header .setting-icons{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-header .setting-icons>i{
+    font-size: 25px;
+    color:whitesmoke;
 }
 
 /* div with input + button */
-
 .add-todo{
     display: flex;
     align-items: center;
@@ -86,6 +164,11 @@ h3{
 }
 
 /* hover */
+
+.bottom-header .setting-icons>i:hover{
+    color: #ffb444;
+}
+
 .add-todo>button:hover{
     background-color:  #4355f5;
 }

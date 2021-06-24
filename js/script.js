@@ -8,7 +8,7 @@ const app = new Vue (
                 'Terminare progetto "To-Do List" ',
                 'Andare in palestra'
             ],
-            newToDo: ''
+            newToDo: '',
 
         },
 
@@ -25,5 +25,19 @@ const app = new Vue (
             }
 
         }
+
+        
     }
+    
 );
+
+// Code for day + month //
+
+const d = new Date();
+
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+document.getElementById("month").innerHTML = months[d.getMonth()];
+
+document.getElementById("day").innerHTML = d.getDate();
+
