@@ -14,7 +14,8 @@
     <!-- CDN Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CDN Vue.js -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
 </head>
 <body>
 
@@ -87,11 +88,8 @@
         <!-- start div with 'to do' items -->
         <div class="todo-list" v-if="toDoList.length > 0">
             <ul>
-                <li class="todo-item" v-for="(item, index) in toDoList">
-                    <div class="left-item">
-                        <input type="checkbox">
-                        <span> {{item}}</span>
-                    </div>
+                <li class="todo-item" v-for="(item, index) in toDoList" @click="lineThrough(index)">
+                    <span :id="index" > {{item}}</span>
                     <button @click="removeTask(index)"><i class="fas fa-trash-alt"></i></button>
                 </li>
             </ul>

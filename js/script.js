@@ -9,6 +9,7 @@ const app = new Vue (
                 'Andare in palestra'
             ],
             newToDo: '',
+            line: 'line'
 
         },
 
@@ -22,6 +23,11 @@ const app = new Vue (
 
             removeTask : function(index){
                 this.toDoList.splice(index,1);
+            },
+
+            lineThrough : function(index) {
+                let element = document.getElementById(index);
+                element.classList.toggle('line');
             }
 
         }
@@ -39,4 +45,3 @@ const months = ["January","February","March","April","May","June","July","August
 document.getElementById("month").innerHTML = months[d.getMonth()];
 
 document.getElementById("day").innerHTML = d.getDate();
-

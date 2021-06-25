@@ -74,14 +74,14 @@ header{
 
 #month{
     font-size: 40px;
-    margin-left: 10px;
     color:#ed6d62;
+    padding-left: 10px;
 }
 
 /* USER photo */
 .bottom-header .photo-user{
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     background-color: white;
     border:2px solid #dee3ea;
@@ -91,7 +91,7 @@ header{
 }
 
 .bottom-header .photo-user>i{
-    font-size: 35px;
+    font-size: 50px;
     color:#dee3ea
 }
 
@@ -149,9 +149,15 @@ header{
     padding:  5px 20px;
 }
 
-.todo-list ul li .left-item>span{
+.todo-list ul li span{
     margin-left: 10px;
     color:#566b8c;
+}
+
+/* Class added to span on click of li*/
+
+.line{
+    text-decoration: line-through;
 }
 
 .todo-list ul li button{
@@ -180,4 +186,41 @@ h3{
 
 .todo-list ul li:hover{
     background-color: #dfe8ffda;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1300px) {
+    .bottom-header .setting-icons{ width: 22%;}
+}
+
+@media only screen and (max-width: 1000px) {
+    .bottom-header .setting-icons{ width: 28%;}
+}
+
+@media only screen and (max-width: 860px) {
+    .container{ width: 90%;}
+
+    .bottom-header .setting-icons{ width: 25%;}
+}
+
+@media only screen and (max-width: 680px) {
+    .bottom-header .date{ 
+        flex-direction: column;
+    }
+
+    #month{
+        font-size: 20px;
+        padding-left: 0px;
+    }
+
+    .bottom-header .setting-icons{
+        width: 20%;
+    }
+
+
+    .bottom-header .setting-icons i{
+        font-size: 18px;
+    }
 }
